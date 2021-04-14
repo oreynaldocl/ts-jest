@@ -1,11 +1,13 @@
-import test from 'ava';
-
 import { double, power } from './number';
 
-test('double', (t) => {
-  t.is(double(2), 4);
+describe('double', () => {
+  it('should return 10 for double(5)', () => {
+    expect(double(5)).toBe(10);
+  });
 });
 
-test('power', (t) => {
-  t.is(power(2, 4), 16);
+describe('power', () => {
+  it('should return 4 for power(2,2)', () => {
+    expect(power(2, 2)).toBe(4);
+  });
 });
